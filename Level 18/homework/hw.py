@@ -84,8 +84,7 @@ def Arithmetic_mean(numbers):
 
 
 def get_vowels(text):
-    vowels = "aeiouaeiou"
-    result = ""
+    vowels = "aeiou"
     for char in text:
         if char in vowels:
             result += char

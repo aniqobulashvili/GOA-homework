@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Animation</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.heart-text {
+    position: absolute;
+    font-size: 18px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    color: pink;
+    white-space: nowrap;
+    text-shadow: 0 0 10px pink,
+                 0 0 20px pink,
+                 0 0 30px pink,
+                 0 0 40px pink;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+const total = 80;
+const texts = [];
+
+const centerX = window.innerWidth / 2;
+const centerY = window.innerHeight / 2;
+
+const scale = Math.min(window.innerWidth, window.innerHeight) / 30;
+
+for (let i = 0; i < total; i++) {
+    const span = document.createElement('span');
+    span.className = 'heart-text';
+    span.innerText = 'I Love You';
+    document.body.appendChild(span);
+    texts.push(span);
+}
+
+function animateHeart() {
+    const t = Date.now() / 1000;
+    const rotation = t * 0.3;
+
+    texts.forEach((span, i) => {
+        const angle = (i / total) * Math.PI * 2 + rotation;
+
+        const x = 16 * Math.pow(Math.sin(angle), 3);
+        const y = 13 * Math.cos(angle)
+                - 5 * Math.cos(2 * angle)
+                - 2 * Math.cos(3 * angle)
+                - Math.cos(4 * angle);
+
+        span.style.left = centerX + x * scale + 'px';
+        span.style.top = centerY - y * scale + 'px';
+    });
+
+    requestAnimationFrame(animateHeart);
+}
+
+animateHeart();
+</script>
+
+</body>
+</html>

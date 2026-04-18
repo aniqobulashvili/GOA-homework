@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: rgb(0, 8, 255);
+            padding: 20px;
+        }
+        table{
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 15px rgb(rgb(187, 1, 211), rgb(1, 84, 201), rgb(0, 255, 255));
+            border-radius: 10px;
+        }
+        thead{
+            background: black;
+            color: white;
+        }
+        th, td{
+            padding: 12px;
+            text-align: center;
+        }
+        tr{
+            border-bottom: 1px solid black;
+        }
+        tr:hover{
+            background: rgb(210, 2, 155);
+        }
+        tbody tr:nth-child(even){
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <table border="2px">
+        <thead>
+        <tr>
+            <th>No.</th>
+            <th>Car brand</th>
+            <th>Most expensive/the cheapest</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>bmw</td>
+                <td>bmw 3.0 csl €800,000</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>porsche</td>
+                <td>taycan $243,700</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>mercedes</td>
+                <td>cls 4matic $100,000</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>bmw</td>
+                <td>228 Gran Coupe $39,600</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>mercedes</td>
+                <td>gla 250 coupe $41,500</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>porsche</td>
+                <td>macan suv $65,400</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+    <!-- Inline CSS სტილი იწერება უშუალოდ HTML ელემენტის 'style' ატრიბუტში. 
+გამოიყენება კონკრეტული ელემენტის სწრაფი გასტილვისთვის, თუმცა 
+დიდი პროექტებისთვის მოუხერხებელია.
+მაგალითი: <h1 style="color: red;">Hello</h1>
+    Internal CSS სტილები იწერება HTML დოკუმენტის <head> სექციაში, <style> ტეგებს შორის.
+მოსახერხებელია, როცა სტილი მხოლოდ ერთ კონკრეტულ გვერდს ეხება.
+    External CSS სტილები იწერება ცალკე .css ფაილში, რომელიც HTML-ს უკავშირდება <link> ტეგით.
+ეს არის საუკეთესო პრაქტიკა, რადგან ერთი ფაილით შეგიძლიათ მართოთ 
+მთელი საიტის დიზაინი. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>ჩემი პირველი საიტი</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.main-title {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #555;
+}
+
+#container1 {
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    padding: 20px;
+    color: #e74c3c;
+    text-align: right;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 10px;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title">მოგესალმებით ჩემს საიტზე</h1>
+    <p class="description">ეს არის პარაგრაფი, რომელსაც აქვს შეცვლილი ფონტი და ზომა.</p>
+
+    <hr>
+
+    <div id="container1">
+        <h1>პირველი შვილი (H1)</h1>
+        <h1>მეორე შვილი (H1)</h1>
+        <h1>მესამე შვილი (H1)</h1>
+    </div>
+
+    <hr>
+
+    <h2>ჩემი გალერეა</h2>
+    <div class="gallery">
+        <img src="https://picsum.photos/200" alt="სურათი 1">
+        <img src="https://picsum.photos/201" alt="სურათი 2">
+        <img src="https://picsum.photos/202" alt="სურათი 3">
+        <img src="https://picsum.photos/203" alt="სურათი 4">
+        <img src="https://picsum.photos/204" alt="სურათი 5">
+    </div>
+
+</body>
+</html>
