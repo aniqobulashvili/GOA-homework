@@ -1,0 +1,77 @@
+<!-- color: განსაზღვრავს ტექსტის ფერს.
+font-family: განსაზღვრავს შრიფტის სახეობას (მაგ: Arial, Sans-serif).
+font-size: განსაზღვრავს ტექსტის ზომას (px, rem, %).
+font-weight: განსაზღვრავს ტექსტის სისქეს (bold, normal, 100-900).
+font-style: გამოიყენება ტექსტის დასახრელად (italic).
+text-align: განსაზღვრავს ტექსტის ჰორიზონტალურ განლაგებას (left, center, right, justify).
+text-decoration: ამატებს ხაზგასმას, გადახაზვას ან ზედა ხაზს.
+text-transform: ცვლის ასოების რეგისტრს (uppercase, lowercase, capitalize).
+line-height: განსაზღვრავს დაშორებას ტექსტის ხაზებს შორის.
+letter-spacing: განსაზღვრავს დაშორებას სიმბოლოებს შორის.
+word-spacing: განსაზღვრავს დაშორებას სიტყვებს შორის. -->
+
+<!-- ფსევდო-სელექტორი არის სპეციალური საკვანძო სიტყვა, რომელიც ემატება სელექტორს და გამოიყენება ელემენტის სპეციფიკური მდგომარეობის გასასტილად. ის საშუალებას გვაძლევს შევცვალოთ ელემენტის ვიზუალი მაშინ, როცა მომხმარებელი მასთან ინტერაქციაში შედის (მაგალითად, მაუსს გადაატარებს).
+:link — აღნიშნავს ლინკს, რომელზეც მომხმარებელს ჯერ არ დაუკლიკავს.
+:visited — აღნიშნავს ლინკს, რომელზეც მომხმარებელი ერთხელ მაინც გადავიდა.
+:hover — აღნიშნავს მდგომარეობას, როდესაც მომხმარებელი მაუსს ელემენტს ზემოდან გადაატარებს.
+:active — აღნიშნავს მომენტს, როდესაც მომხმარებელი ელემენტზე აჭერს. -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porsche Enthusiast</title>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="#" class="nav-link">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Porsche 911 Turbo S</h1>
+        <p>ეს არის მსოფლიოში ერთ-ერთი ყველაზე სწრაფი და დახვეწილი ავტომობილი.</p>
+    </main>
+
+    <footer>
+        <p>© 2026 Porsche Fan Club. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+
+    <table class="custom-table">
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Domenic</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+        <tr class="active-row">
+            <td>2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td>Students</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td>dcode</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

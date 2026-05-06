@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+p:hover{
+    color: green;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+a-1:hover{
+    text-shadow: 10px 0px 4px;
+}
+
+a-2:visiteed{
+    color: pink;
+}
+
+a-3:active{
+    color: green;
+}
+
+.hover-h2{
+    text-shadow: 3px 3px 6px;
+    background-color: yellow;
+}

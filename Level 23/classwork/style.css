@@ -1,0 +1,16 @@
+div{
+    width: 600px;
+    height: 200px;
+}
+
+div-header{
+    width: 150px;
+}
+
+div-main{
+    text-shadow: 50%;
+}
+
+div-foot{
+    text-shadow: -10px -4px 4px blue;
+}

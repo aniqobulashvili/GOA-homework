@@ -1,0 +1,77 @@
+.p10-1 {
+    text-decoration: underline red dotted;
+}
+
+.p10-2 {
+    text-decoration: overline blue wavy;
+}
+
+.p10-3 {
+    text-decoration: line-through dashed;
+}
+
+.p11-1 {
+    text-decoration: underline dotted; 
+}
+
+.p11-2 {
+    text-decoration: overline dashed;
+}
+
+.p11-3 {
+    text-decoration: line-through wavy;
+}
+
+.p11-4 {
+    text-decoration: underline double;
+}
+
+.p11-5 {
+    text-decoration: underline solid;
+}
+
+h1.task12 {
+    text-decoration: underline;
+}
+
+h2.task12 {
+    text-decoration: overline;
+}
+
+h3.task12 {
+    text-decoration: blueviolet dashed line-through;
+}
+
+em.task12 {
+    text-decoration: wavy red underline;
+}
+
+strong.task12 {
+    text-decoration: double underline;
+}
+
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#text-dotted {
+    text-decoration: underline dotted green;
+}
+
+#text-wavy {
+    text-decoration: underline wavy orange;
+}
+
+#text-double {
+    text-decoration: overline double blue;
+}
+
+#text-dashed {
+    text-decoration: line-through dashed red;
+}
+
+#text-mixed {
+    text-decoration: underline overline solid purple;
+}
